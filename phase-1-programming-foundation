@@ -1,0 +1,230 @@
+# 📘 Phase 1: Programming Foundation (Java + DSA)
+
+## 🎯 Objective
+
+Build a strong foundation in **Java programming, OOP concepts, and Data Structures & Algorithms (DSA)** required for Full Stack and Cloud/DevOps roles.
+
+---
+
+# 🧱 1. Java Basics
+
+### 🔹 Variables & Data Types
+
+Used to store data in a program.
+
+* Primitive: int, double, boolean, char
+* Non-Primitive: String, Array
+
+---
+
+### 🔹 Operators
+
+Used to perform operations on variables.
+
+* Arithmetic (+, -, *, /, %)
+* Relational (==, !=, >, <)
+* Logical (&&, ||, !)
+
+---
+
+### 🔹 Control Statements
+
+Control the flow of execution.
+
+* if / else → decision making
+* switch → multiple conditions
+* loops (for, while, do-while) → repetition
+
+---
+
+### 🔹 Functions (Methods)
+
+Reusable blocks of code that perform specific tasks.
+
+---
+
+### 🔹 Arrays
+
+Collection of elements of the same type stored in contiguous memory.
+
+---
+
+# 🧠 2. Object-Oriented Programming (OOP)
+
+### 🔹 Class & Object
+
+Class = blueprint, Object = instance of class.
+
+---
+
+### 🔹 Encapsulation
+
+Binding data and methods together using private variables.
+
+---
+
+### 🔹 Inheritance
+
+Allows one class to inherit properties of another class.
+
+---
+
+### 🔹 Polymorphism
+
+Same method behaves differently (overloading & overriding).
+
+---
+
+### 🔹 Abstraction
+
+Hides implementation details using abstract classes/interfaces.
+
+---
+
+# 📦 3. Java Collections Framework
+
+### 🔹 List
+
+Ordered collection, allows duplicates (e.g., ArrayList).
+
+---
+
+### 🔹 Set
+
+Unordered collection, no duplicates (e.g., HashSet).
+
+---
+
+### 🔹 Map
+
+Stores key-value pairs (e.g., HashMap).
+
+---
+
+### 🔹 Important Comparisons
+
+* ArrayList vs LinkedList
+* HashMap vs TreeMap
+
+---
+
+# 🧮 4. Data Structures & Algorithms (DSA)
+
+### 🔹 Arrays
+
+Basic data structure used for storing elements.
+
+---
+
+### 🔹 Strings
+
+Sequence of characters (immutable in Java).
+
+---
+
+### 🔹 Linked List
+
+Dynamic data structure with nodes connected via pointers.
+
+---
+
+### 🔹 Stack
+
+LIFO (Last In First Out) data structure.
+
+---
+
+### 🔹 Queue
+
+FIFO (First In First Out) data structure.
+
+---
+
+### 🔹 Recursion
+
+Function that calls itself to solve problems.
+
+---
+
+### 🔹 Searching Algorithms
+
+* Linear Search → simple search
+* Binary Search → fast search (sorted data)
+
+---
+
+### 🔹 Sorting Algorithms
+
+* Bubble Sort
+* Selection Sort
+* Insertion Sort
+
+---
+
+# ⚡ 5. Time & Space Complexity
+
+### 🔹 Big-O Notation
+
+Used to measure performance of algorithms.
+
+* O(1) → constant
+* O(n) → linear
+* O(log n) → efficient
+* O(n²) → slow
+
+---
+
+# 🧪 6. Problem Solving
+
+### 🔹 Approach
+
+1. Understand problem
+2. Dry run
+3. Write logic
+4. Optimize
+5. Code
+
+---
+
+### 🔹 Practice Platforms
+
+* LeetCode
+* HackerRank
+* CodeStudio
+
+---
+
+# 🏁 Phase 1 Outcome
+
+After completing this phase, you should:
+
+* ✅ Understand Java fundamentals
+* ✅ Have strong OOP knowledge
+* ✅ Know basic DSA concepts
+* ✅ Solve coding problems confidently
+
+---
+
+# ⚠️ Common Mistakes
+
+* Skipping DSA
+* Only watching tutorials
+* Not practicing coding
+* Ignoring fundamentals
+
+---
+
+# 💡 Pro Tips
+
+* Practice daily
+* Focus on logic building
+* Write clean code
+* Revise regularly
+
+---
+
+## 🚀 Next Step
+
+➡️ Move to **Phase 2: Frontend Development (React + UI)**
+
+---
