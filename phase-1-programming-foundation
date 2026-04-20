@@ -2,191 +2,413 @@
 
 ## 🎯 Objective
 
-Build a strong foundation in **Java programming, OOP concepts, and Data Structures & Algorithms (DSA)** required for Full Stack and Cloud/DevOps roles.
+Build a strong foundation in **Java programming, Object-Oriented Programming (OOP), and Data Structures & Algorithms (DSA)**.
+This phase is critical because every **Full Stack Developer** and **Cloud/DevOps Engineer** relies on strong problem-solving and backend logic skills.
 
 ---
 
-# 🧱 1. Java Basics
+# 🧱 1. Java Basics (Core Foundation)
 
-### 🔹 Variables & Data Types
+## 🔹 Variables & Data Types
 
-Used to store data in a program.
+Variables are used to store data in memory. Java is a **strongly typed language**, meaning every variable must have a defined type.
 
-* Primitive: int, double, boolean, char
-* Non-Primitive: String, Array
+### ✅ Types of Data Types:
 
----
+### 1. Primitive Data Types (Stored directly in memory)
 
-### 🔹 Operators
+| Type    | Size    | Example                  |
+| ------- | ------- | ------------------------ |
+| int     | 4 bytes | int age = 21;            |
+| double  | 8 bytes | double price = 99.99;    |
+| boolean | 1 bit   | boolean isActive = true; |
+| char    | 2 bytes | char grade = 'A';        |
 
-Used to perform operations on variables.
+### 2. Non-Primitive Data Types (Reference Types)
 
-* Arithmetic (+, -, *, /, %)
-* Relational (==, !=, >, <)
-* Logical (&&, ||, !)
+* String → sequence of characters
+* Array → collection of elements
+* Objects → user-defined types
 
----
+📌 Example:
 
-### 🔹 Control Statements
-
-Control the flow of execution.
-
-* if / else → decision making
-* switch → multiple conditions
-* loops (for, while, do-while) → repetition
-
----
-
-### 🔹 Functions (Methods)
-
-Reusable blocks of code that perform specific tasks.
+```java
+String name = "Sachin";
+int[] arr = {1, 2, 3};
+```
 
 ---
 
-### 🔹 Arrays
+## 🔹 Operators
 
-Collection of elements of the same type stored in contiguous memory.
+Operators are used to perform operations on variables.
+
+### Types:
+
+### 1. Arithmetic Operators
+
+```java
++  -  *  /  %
+```
+
+### 2. Relational Operators
+
+```java
+==  !=  >  <  >=  <=
+```
+
+### 3. Logical Operators
+
+```java
+&& (AND)
+|| (OR)
+!  (NOT)
+```
+
+📌 Example:
+
+```java
+if(age > 18 && isActive) {
+    System.out.println("Eligible");
+}
+```
+
+---
+
+## 🔹 Control Statements
+
+Control the flow of execution in a program.
+
+### 1. Decision Making
+
+```java
+if(condition) { }
+else { }
+```
+
+### 2. Switch Case
+
+```java
+switch(day) {
+    case 1: System.out.println("Monday"); break;
+}
+```
+
+### 3. Loops
+
+| Loop     | Use                    |
+| -------- | ---------------------- |
+| for      | Fixed iterations       |
+| while    | Unknown iterations     |
+| do-while | Executes at least once |
+
+📌 Example:
+
+```java
+for(int i = 0; i < 5; i++) {
+    System.out.println(i);
+}
+```
+
+---
+
+## 🔹 Functions (Methods)
+
+Reusable blocks of code.
+
+📌 Example:
+
+```java
+public int add(int a, int b) {
+    return a + b;
+}
+```
+
+### Key Concepts:
+
+* Method Overloading
+* Return types
+* Parameters
+
+---
+
+## 🔹 Arrays
+
+Used to store multiple values of the same type.
+
+📌 Example:
+
+```java
+int[] arr = {10, 20, 30};
+System.out.println(arr[0]);
+```
+
+### Important Points:
+
+* Fixed size
+* Indexed (starts from 0)
+* Stored in contiguous memory
 
 ---
 
 # 🧠 2. Object-Oriented Programming (OOP)
 
-### 🔹 Class & Object
+## 🔹 Class & Object
 
-Class = blueprint, Object = instance of class.
+* Class → Blueprint
+* Object → Instance of class
 
----
+📌 Example:
 
-### 🔹 Encapsulation
+```java
+class Car {
+    String brand;
+}
 
-Binding data and methods together using private variables.
-
----
-
-### 🔹 Inheritance
-
-Allows one class to inherit properties of another class.
-
----
-
-### 🔹 Polymorphism
-
-Same method behaves differently (overloading & overriding).
+Car c = new Car();
+```
 
 ---
 
-### 🔹 Abstraction
+## 🔹 Encapsulation
 
-Hides implementation details using abstract classes/interfaces.
+Wrapping data + methods together.
+
+📌 Achieved using:
+
+* private variables
+* getters & setters
+
+```java
+class User {
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+}
+```
+
+---
+
+## 🔹 Inheritance
+
+One class inherits another.
+
+```java
+class Animal {
+    void eat() {}
+}
+
+class Dog extends Animal {
+}
+```
+
+---
+
+## 🔹 Polymorphism
+
+Same method behaves differently.
+
+### Types:
+
+* Compile-time → Method Overloading
+* Runtime → Method Overriding
+
+---
+
+## 🔹 Abstraction
+
+Hiding internal implementation.
+
+### Achieved using:
+
+* abstract class
+* interface
+
+```java
+interface Payment {
+    void pay();
+}
+```
 
 ---
 
 # 📦 3. Java Collections Framework
 
-### 🔹 List
+## 🔹 List
 
-Ordered collection, allows duplicates (e.g., ArrayList).
+* Ordered
+* Allows duplicates
 
----
+Examples:
 
-### 🔹 Set
-
-Unordered collection, no duplicates (e.g., HashSet).
-
----
-
-### 🔹 Map
-
-Stores key-value pairs (e.g., HashMap).
+* ArrayList
+* LinkedList
 
 ---
 
-### 🔹 Important Comparisons
+## 🔹 Set
 
-* ArrayList vs LinkedList
-* HashMap vs TreeMap
+* No duplicates
+* Unordered
+
+Examples:
+
+* HashSet
+* TreeSet
+
+---
+
+## 🔹 Map
+
+* Key-Value pairs
+
+Examples:
+
+* HashMap
+* TreeMap
+
+---
+
+## 🔹 Important Comparisons
+
+### ArrayList vs LinkedList
+
+| Feature       | ArrayList | LinkedList |
+| ------------- | --------- | ---------- |
+| Memory        | Less      | More       |
+| Access        | Fast      | Slow       |
+| Insert/Delete | Slow      | Fast       |
+
+---
+
+### HashMap vs TreeMap
+
+| Feature     | HashMap  | TreeMap |
+| ----------- | -------- | ------- |
+| Order       | No order | Sorted  |
+| Performance | Faster   | Slower  |
 
 ---
 
 # 🧮 4. Data Structures & Algorithms (DSA)
 
-### 🔹 Arrays
+## 🔹 Arrays
 
-Basic data structure used for storing elements.
-
----
-
-### 🔹 Strings
-
-Sequence of characters (immutable in Java).
+* Basic structure
+* Fast access (O(1))
 
 ---
 
-### 🔹 Linked List
+## 🔹 Strings
 
-Dynamic data structure with nodes connected via pointers.
-
----
-
-### 🔹 Stack
-
-LIFO (Last In First Out) data structure.
+* Immutable
+* Stored in String Pool
 
 ---
 
-### 🔹 Queue
+## 🔹 Linked List
 
-FIFO (First In First Out) data structure.
-
----
-
-### 🔹 Recursion
-
-Function that calls itself to solve problems.
+* Dynamic size
+* Nodes connected via pointers
 
 ---
 
-### 🔹 Searching Algorithms
+## 🔹 Stack
 
-* Linear Search → simple search
-* Binary Search → fast search (sorted data)
+* LIFO (Last In First Out)
+
+Operations:
+
+* push()
+* pop()
 
 ---
 
-### 🔹 Sorting Algorithms
+## 🔹 Queue
 
-* Bubble Sort
-* Selection Sort
-* Insertion Sort
+* FIFO (First In First Out)
+
+Operations:
+
+* enqueue()
+* dequeue()
+
+---
+
+## 🔹 Recursion
+
+Function calls itself.
+
+📌 Example:
+
+```java
+int fact(int n) {
+    if(n == 0) return 1;
+    return n * fact(n-1);
+}
+```
+
+---
+
+## 🔹 Searching Algorithms
+
+### Linear Search
+
+* O(n)
+* Works on unsorted data
+
+### Binary Search
+
+* O(log n)
+* Works on sorted data
+
+---
+
+## 🔹 Sorting Algorithms
+
+| Algorithm      | Complexity |
+| -------------- | ---------- |
+| Bubble Sort    | O(n²)      |
+| Selection Sort | O(n²)      |
+| Insertion Sort | O(n²)      |
 
 ---
 
 # ⚡ 5. Time & Space Complexity
 
-### 🔹 Big-O Notation
+## 🔹 Big-O Notation
 
-Used to measure performance of algorithms.
+Used to measure performance.
 
-* O(1) → constant
-* O(n) → linear
-* O(log n) → efficient
-* O(n²) → slow
+| Complexity | Meaning   |
+| ---------- | --------- |
+| O(1)       | Constant  |
+| O(n)       | Linear    |
+| O(log n)   | Efficient |
+| O(n²)      | Slow      |
 
----
+📌 Example:
 
-# 🧪 6. Problem Solving
-
-### 🔹 Approach
-
-1. Understand problem
-2. Dry run
-3. Write logic
-4. Optimize
-5. Code
+* Array access → O(1)
+* Loop → O(n)
 
 ---
 
-### 🔹 Practice Platforms
+# 🧪 6. Problem Solving Strategy
+
+## 🔹 Step-by-Step Approach
+
+1. Understand the problem
+2. Dry run with sample input
+3. Write logic (pseudo code)
+4. Optimize solution
+5. Convert into code
+
+---
+
+## 🔹 Practice Platforms
 
 * LeetCode
 * HackerRank
@@ -196,34 +418,36 @@ Used to measure performance of algorithms.
 
 # 🏁 Phase 1 Outcome
 
-After completing this phase, you should:
+After completing this phase, you will:
 
-* ✅ Understand Java fundamentals
-* ✅ Have strong OOP knowledge
-* ✅ Know basic DSA concepts
+* ✅ Understand Java fundamentals deeply
+* ✅ Master OOP concepts
+* ✅ Have strong DSA basics
 * ✅ Solve coding problems confidently
+* ✅ Be ready for backend + interview rounds
 
 ---
 
 # ⚠️ Common Mistakes
 
-* Skipping DSA
-* Only watching tutorials
-* Not practicing coding
-* Ignoring fundamentals
+* ❌ Skipping DSA
+* ❌ Only watching tutorials
+* ❌ Not practicing coding
+* ❌ Ignoring fundamentals
 
 ---
 
 # 💡 Pro Tips
 
-* Practice daily
+* Practice coding daily (at least 2–3 problems)
 * Focus on logic building
-* Write clean code
-* Revise regularly
+* Write clean and readable code
+* Revise concepts weekly
+* Build small projects alongside learning
 
 ---
 
-## 🚀 Next Step
+# 🚀 Next Step
 
 ➡️ Move to **Phase 2: Frontend Development (React + UI)**
 
