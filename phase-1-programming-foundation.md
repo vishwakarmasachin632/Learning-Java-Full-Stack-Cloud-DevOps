@@ -24,6 +24,31 @@ Variables are used to store data in memory. Java is a **strongly typed language*
 | boolean | 1 bit   | boolean isActive = true; |
 | char    | 2 bytes | char grade = 'A';        |
 
+### 🔹 Definition
+Primitive data types are **basic, built-in types** in Java that store **actual values**.
+
+### 🔹 Key Features
+- Stores **actual value**
+- Fixed memory size
+- Faster performance
+- No methods available
+- Cannot be `null`
+
+### 🔹 Types (8 total)
+- `byte`
+- `short`
+- `int`
+- `long`
+- `float`
+- `double`
+- `char`
+- `boolean`
+
+### 🔹 Example
+```java
+int a = 10;
+double b = 5.5;
+```
 ### 2. Non-Primitive Data Types (Reference Types)
 
 * String → sequence of characters
